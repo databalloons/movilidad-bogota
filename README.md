@@ -31,9 +31,6 @@ jupyter notebook
 
 ### Fuentes de datos
 * csv
-    - Aux_DuracionEODH_2019<sup>1</sup>
-    - HogaresEODH_2019<sup>1</sup>
-    - PersonasEODH_2019<sup>1</sup>
     - ViajesEODH_2019<sup>1</sup>
 * shp
     - ManzanaEstratificacion<sup>2</sup>
