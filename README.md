@@ -8,7 +8,7 @@ Para poder ejecutar el código es necesario instalar Python (>=3.6) y las siguie
 * `numpy`
 * `pandas`
 
-La manera más sencilla de realizar esta instalación es a través de Conda. Para esto descargue [Miniconda][1] o [Anaconda][2]. Acá puede encontrar más información sobre la diferencia entre estas y una guía detallada sobre su intalación.
+La manera más sencilla de realizar esta instalación es a través de Conda. Para esto descargue [Miniconda][1] o [Anaconda][2]. [Acá][3] puede encontrar más información sobre la diferencia entre estas y una guía detallada sobre su intalación.
 
 Una vez tenga instalado Conda en su equipo, vaya a la raíz de este proyecto en una terminal y ejecute el siguiente comando para crear un entorno con las dependencias necesarias:
 
@@ -42,7 +42,9 @@ jupyter notebook
 
 
 <sup>1</sup> [Prudencia Bogotá - Encuestas de movilidad][4]
+
 <sup>2</sup> [Ideca - Manzana Estratificación Bogotá D.C.][5]
+
 <sup>3</sup> [Ideca - Usos por manzana Bogotá D.C.][6]
 
 
@@ -51,7 +53,6 @@ jupyter notebook
 [1]: https://docs.conda.io/en/latest/miniconda.html
 [2]: https://www.anaconda.com/products/individual
 [3]: https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html
-
 [4]: https://www.simur.gov.co/portal-simur/datos-del-sector/encuestas-de-movilidad/
 [5]: https://www.ideca.gov.co/recursos/mapas/manzana-estratificacion-bogota-dc
 [6]: https://www.ideca.gov.co/recursos/mapas/usos-por-manzana-bogota-dc
