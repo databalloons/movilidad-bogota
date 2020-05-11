@@ -1,0 +1,9 @@
+name: movilidad-bogota
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - geopandas
+  - notebook
+  - numpy
+  - pandas
