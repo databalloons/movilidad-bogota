@@ -1,7 +1,3 @@
 .ipynb_checkpoints
-data/csv/Aux_DuracionEODH_2019.csv
-data/csv/HogaresEODH_2019.csv
-data/csv/PersonasEODH_2019.csv
-data/shp/UTAM*
+data
 notebooks/exploration.ipynb
-
