@@ -28,6 +28,22 @@ Para abrir Jupyter Notebook utilizando el intérprete de Python recién instalad
 jupyter notebook
 ```
 
+### Descarga de datos
+Los links de descarga de los datos originales utilizados en este proyecto se encuentran en la sección **Fuentes de datos**. Sin embargo, una carpeta con todos los datos (de los cuales algunos han sido reestructurados para disminuir espacio de almacenamiento y cumplir con los fines del proyecto) está disponible [acá][3] para su descarga de forma manual. También es posible descargar esta carpeta desde una terminal ejecutando el siguiente comando (desde la raíz del proyecto):
+
+```
+curl -L -o "https://drive.google.com/uc?export=download&id=1He-R_menD5nHA-IQXx7jrhIIi-biFhA9"
+```
+
+Asegurese que una vez descargados los datos, la estructura de las carpetas del proyecto sea la siguiente:
+
+```
+.
+└── data
+     └── csv
+     └── shp
+└── notebooks
+```
 
 ### Fuentes de datos
 * csv
@@ -38,11 +54,11 @@ jupyter notebook
     - ZAT<sup>1</sup>
 
 
-<sup>1</sup> [Prudencia Bogotá - Encuestas de movilidad][4]
+<sup>1</sup> [Prudencia Bogotá - Encuestas de movilidad][5]
 
-<sup>2</sup> [Ideca - Manzana Estratificación Bogotá D.C.][5]
+<sup>2</sup> [Ideca - Manzana Estratificación Bogotá D.C.][6]
 
-<sup>3</sup> [Ideca - Usos por manzana Bogotá D.C.][6]
+<sup>3</sup> [Ideca - Usos por manzana Bogotá D.C.][7]
 
 
 
@@ -50,6 +66,7 @@ jupyter notebook
 [1]: https://docs.conda.io/en/latest/miniconda.html
 [2]: https://www.anaconda.com/products/individual
 [3]: https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html
-[4]: https://www.simur.gov.co/portal-simur/datos-del-sector/encuestas-de-movilidad/
-[5]: https://www.ideca.gov.co/recursos/mapas/manzana-estratificacion-bogota-dc
-[6]: https://www.ideca.gov.co/recursos/mapas/usos-por-manzana-bogota-dc
+[4]: https://drive.google.com/open?id=1QLCakladzBUmSZAg6qA5UQ9u8e0pjRiz
+[5]: https://www.simur.gov.co/portal-simur/datos-del-sector/encuestas-de-movilidad/
+[6]: https://www.ideca.gov.co/recursos/mapas/manzana-estratificacion-bogota-dc
+[7]: https://www.ideca.gov.co/recursos/mapas/usos-por-manzana-bogota-dc
