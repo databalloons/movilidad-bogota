@@ -32,7 +32,7 @@ jupyter notebook
 Los links de descarga de los datos originales utilizados en este proyecto se encuentran en la sección **Fuentes de datos**. Sin embargo, una carpeta con todos los datos (de los cuales algunos han sido reestructurados para disminuir espacio de almacenamiento y cumplir con los fines del proyecto) está disponible [acá][4] para su descarga de forma manual. También es posible descargar esta carpeta desde una terminal ejecutando el siguiente comando (desde la raíz del proyecto):
 
 ```
-curl -L -o {/path_project}/datos.zip "https://drive.google.com/uc?export=download&id=1He-R_menD5nHA-IQXx7jrhIIi-biFhA9"
+curl -L -o ./datos.zip "https://drive.google.com/uc?export=download&id=1He-R_menD5nHA-IQXx7jrhIIi-biFhA9"
 ```
 
 Asegurese que una vez descargados los datos, la estructura de las carpetas del proyecto sea la siguiente:
