@@ -4,7 +4,7 @@
 ### Configuración de entorno de desarrollo
 Para poder ejecutar el código es necesario instalar Python (>=3.6) y las siguientes dependencias:
 * `geopandas`
-* `notebook` (Jupyter Notebook)
+* `notebook`
 * `numpy`
 * `pandas`
 
@@ -50,18 +50,23 @@ Asegurese que una vez descargados los datos, la estructura de las carpetas del p
 
 ### Fuentes de datos
 * csv
-    - ViajesEODH_2019<sup>1</sup>
+    - CNPV2018_5PER_A2_11.csv<sup>1</sup>
+    - CNPV2018_MGN_A2_11.csv<sup>1</sup>
+    - ViajesEODH_2019<sup>2</sup>
 * shp
-    - ManzanaEstratificacion<sup>2</sup>
-    - ManzanaUsoSuelo<sup>3</sup>
-    - ZAT<sup>1</sup>
+    - MANZANA<sup>3,4</sup>
+    - MGN_URB_MANZANA<sup>5</sup>
+    - ZAT<sup>2</sup>
 
+<sup>1</sup> [DANE - Censo Nacional de Población y Vivienda 2018][5]. El link de descarga se encuenta dentro de la pestaña *Obtener Microdatos* en la fila *11Bogota*. 
 
-<sup>1</sup> [Prudencia Bogotá - Encuestas de movilidad][5]
+<sup>2</sup> [Prudencia Bogotá - Encuestas de movilidad][6]. Los datos corresponden a la Encuesta de movilidad 2019.
 
-<sup>2</sup> [Ideca - Manzana Estratificación Bogotá D.C.][6]
+<sup>3</sup> [Ideca - Manzana Estratificación Bogotá D.C.][7]
 
-<sup>3</sup> [Ideca - Usos por manzana Bogotá D.C.][7]
+<sup>4</sup> [Ideca - Usos por manzana Bogotá D.C.][8]
+
+<sup>5</sup> [Geoportal DANE - Descarga del Marco Geoestadistico Nacional (MGN)][9]. El archivo corresponde a *Nivel Geográfico Manzana Censal*, ubicado en la pestaña *Año 2018*.
 
 
 
@@ -70,6 +75,8 @@ Asegurese que una vez descargados los datos, la estructura de las carpetas del p
 [2]: https://www.anaconda.com/products/individual
 [3]: https://docs.conda.io/projects/conda/en/latest/user-guide/install/download.html
 [4]: https://drive.google.com/open?id=1QLCakladzBUmSZAg6qA5UQ9u8e0pjRiz
-[5]: https://www.simur.gov.co/portal-simur/datos-del-sector/encuestas-de-movilidad/
-[6]: https://www.ideca.gov.co/recursos/mapas/manzana-estratificacion-bogota-dc
-[7]: https://www.ideca.gov.co/recursos/mapas/usos-por-manzana-bogota-dc
+[5]: http://microdatos.dane.gov.co/index.php/catalog/643/get_microdata
+[6]: https://www.simur.gov.co/portal-simur/datos-del-sector/encuestas-de-movilidad/
+[7]: https://www.ideca.gov.co/recursos/mapas/manzana-estratificacion-bogota-dc
+[8]: https://www.ideca.gov.co/recursos/mapas/usos-por-manzana-bogota-dc
+[9]: https://geoportal.dane.gov.co/servicios/descarga-y-metadatos/descarga-mgn-marco-geoestadistico-nacional/
