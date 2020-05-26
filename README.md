@@ -54,19 +54,34 @@ Asegurese que una vez descargados los datos, la estructura de las carpetas del p
     - CNPV2018_MGN_A2_11.csv<sup>1</sup>
     - ViajesEODH_2019<sup>2</sup>
 * shp
-    - MANZANA<sup>3,4</sup>
-    - MGN_URB_MANZANA<sup>5</sup>
+    - CICLOPARQUEADEROS<sup></sup>
+    - MANZANA<sup>4,5</sup>
+    - MGN_URB_MANZANA<sup>6</sup>
+    - PARQUEADEROS<sup>7</sup>
     - ZAT<sup>2</sup>
 
 <sup>1</sup> [DANE - Censo Nacional de Población y Vivienda 2018][5]. El link de descarga se encuenta dentro de la pestaña *Obtener Microdatos* en la fila *11Bogota*. 
 
 <sup>2</sup> [Prudencia Bogotá - Encuestas de movilidad][6]. Los datos corresponden a la Encuesta de movilidad 2019.
 
-<sup>3</sup> [Ideca - Manzana Estratificación Bogotá D.C.][7]
+<sup>3</sup> [Catastro Bogotá - Cicloparqueadero][7]
 
-<sup>4</sup> [Ideca - Usos por manzana Bogotá D.C.][8]
+<sup>4</sup> [Ideca - Manzana Estratificación Bogotá D.C.][8]. Los datos fueron exportados accediendo al servicio desde QGIS.
 
-<sup>5</sup> [Geoportal DANE - Descarga del Marco Geoestadistico Nacional (MGN)][9]. El archivo corresponde a *Nivel Geográfico Manzana Censal*, ubicado en la pestaña *Año 2018*.
+<sup>5</sup> [Ideca - Usos por manzana Bogotá D.C.][9]
+
+<sup>6</sup> [Geoportal DANE - Descarga del Marco Geoestadistico Nacional (MGN)][10]. El archivo corresponde a *Nivel Geográfico Manzana Censal*, ubicado en la pestaña *Año 2018*.
+
+<sup>7</sup> OpenStreetMap. Para descargar los parqueaderos se utilizó la interfaz de [Overpass Turbo][11] con la siguiente consulta:
+
+```
+[out:json][timeout:25];
+{{geocodeArea:Bogotá}}->.searchArea;
+(
+  node["amenity"="parking"](area.searchArea);
+);
+out body;
+```
 
 
 
@@ -77,6 +92,8 @@ Asegurese que una vez descargados los datos, la estructura de las carpetas del p
 [4]: https://drive.google.com/open?id=1QLCakladzBUmSZAg6qA5UQ9u8e0pjRiz
 [5]: http://microdatos.dane.gov.co/index.php/catalog/643/get_microdata
 [6]: https://www.simur.gov.co/portal-simur/datos-del-sector/encuestas-de-movilidad/
-[7]: https://www.ideca.gov.co/recursos/mapas/manzana-estratificacion-bogota-dc
-[8]: https://www.ideca.gov.co/recursos/mapas/usos-por-manzana-bogota-dc
-[9]: https://geoportal.dane.gov.co/servicios/descarga-y-metadatos/descarga-mgn-marco-geoestadistico-nacional/
+[7]: http://serviciosgis.catastrobogota.gov.co/arcgis/rest/services/movilidad/cicloparqueadero/MapServer
+[8]: https://www.ideca.gov.co/recursos/mapas/manzana-estratificacion-bogota-dc
+[9]: https://www.ideca.gov.co/recursos/mapas/usos-por-manzana-bogota-dc
+[10]: https://geoportal.dane.gov.co/servicios/descarga-y-metadatos/descarga-mgn-marco-geoestadistico-nacional/
+[11]: https://overpass-turbo.eu/
